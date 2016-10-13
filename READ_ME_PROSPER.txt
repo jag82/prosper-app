@@ -20,4 +20,6 @@ icApiProvider.setBase('http://213.187.84.22:3000')
 
 6) Farben und Icons stehen in styles/typography_and_colors.css
 
+7) Die Homepage mit den Kacheln liegt in /pages/main.html. Beispielkacheln für Zielgruppen gibt es dort, allerdings: auskommentiert.
+
 
