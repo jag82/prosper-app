@@ -1040,7 +1040,7 @@ angular.module('icDirectives', [
 	function(){
 		return {
 			restrict: 'E',
-			template: "<span>Info</span><span>Compass</span>"
+			template: "<span>Prosper</span>"
 		}
 	}
 ])

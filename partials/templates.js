@@ -788,23 +788,6 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	Home\n" +
     "</a>\n" +
     "\n" +
-    "<a \n" +
-    "	ng-repeat 	= \"type in ::icConfigData.types\"\n" +
-    "	ng-href		= \"/#t/{{type}}\"\n" +
-    "	ng-click 	= \"icOverlays.toggle()\" \n" +
-    "	ic-touch-me\n" +
-    ">\n" +
-    "	<span \n" +
-    "		class 		= \"icon\"\n" +
-    "		style		= \"background-image: url({{::type | icIcon : 'type' : 'color'}});\"\n" +
-    "	>		\n" +
-    "	</span>\n" +
-    "	<div>\n" +
-    "		{{type | uppercase | prepend : \"TYPES.\" | translate}}\n" +
-    "	</div>\n" +
-    "</a>\n" +
-    "\n" +
-    "\n" +
     "<a\n" +
     "	ng-click 	= \"expand.topics = !expand.topics\"\n" +
     "	ng-class	= \"{'icon-interface-arrow-down': expand.topics, 'icon-interface-arrow-right': !expand.topics}\"\n" +
@@ -1039,9 +1022,9 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     ">\n" +
     "</ic-filter-interface>\n" +
     "\n" +
-    "\n" +
+    "<!-- \n" +
     "<ic-quick-filter>\n" +
-    "</ic-quick-filter>\n" +
+    "</ic-quick-filter> -->\n" +
     "\n" +
     "\n" +
     "<ic-search-result-list\n" +
@@ -1064,29 +1047,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	class = \"tiles\"\n" +
     ">\n" +
     "\n" +
-    "	\n" +
-    "\n" +
-    "	\n" +
-    "	\n" +
-    "	<a\n" +
-    "		ng-repeat	= \"type in icConfigData.types\"\n" +
-    "		ng-href 	= \"#{{icSite.getNewPath({t: type}, true)}}\"\n" +
-    "		ic-tile\n" +
-    "		ic-title	= \"'TYPES.'+type | uppercase | translate\"\n" +
-    "		ic-brief	= \"\"\n" +
-    "		ic-icon		= \"type | icIcon : 'type' : 'white'\"\n" +
-    "		ic-type		= \"type\"\n" +
-    "	></a>\n" +
-    "\n" +
-    "	<a\n" +
-    "		ng-href 	= \"#/s/infopoint\"\n" +
-    "		ic-tile\n" +
-    "		ic-title	= \"'Infopoints'\"\n" +
-    "		ic-brief	= \"\"\n" +
-    "		ic-type		= \"'places'\"\n" +
-    "		ic-image	= \"'/images/infopoint.jpg'\"\n" +
-    "	></a>\n" +
-    "\n" +
+    "<!-- 	\n" +
     "\n" +
     "	<a\n" +
     "		ng-repeat	= \"target_group in icConfigData.targetGroups\"\n" +
@@ -1096,17 +1057,8 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "		ic-brief	= \"'INTERFACE.TARGET_GROUP' |translate\"\n" +
     "		ic-type		= \"::Mock.random(['events', 'services', 'places', 'information'], $index+1)\"\n" +
     "	></a>\n" +
-    "\n" +
-    "	<!-- <a \n" +
-    "		href 		= \"#{{::icSite.getNewPath({item: index})}}\" \n" +
-    "		ic-tile\n" +
-    "		ic-title	= \"::Mock.random(['Kurs', 'Angebot', 'Projekt', 'Termine'], index+5)\"\n" +
-    "		ic-brief	= \"::Mock.random(['von Beispielinitiative', 'für Beispieltext', 'mit Blindtext', 'im Beispielamt'], index+3)\"\n" +
-    "		ic-image	= \"::Mock.image(index+2)\"\n" +
-    "		ic-type		= \"::Mock.random(['events', 'services', 'places', 'information'], index+1)\"\n" +
-    "\n" +
-    "		ng-repeat 	= \"index in ::Mock.arr(16)\"\n" +
-    "	></a> -->\n" +
+    " -->\n" +
+    "	\n" +
     "\n" +
     "</div>\n" +
     "\n"

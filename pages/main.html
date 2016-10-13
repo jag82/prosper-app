@@ -8,29 +8,7 @@
 	class = "tiles"
 >
 
-	
-
-	
-	
-	<a
-		ng-repeat	= "type in icConfigData.types"
-		ng-href 	= "#{{icSite.getNewPath({t: type}, true)}}"
-		ic-tile
-		ic-title	= "'TYPES.'+type | uppercase | translate"
-		ic-brief	= ""
-		ic-icon		= "type | icIcon : 'type' : 'white'"
-		ic-type		= "type"
-	></a>
-
-	<a
-		ng-href 	= "#/s/infopoint"
-		ic-tile
-		ic-title	= "'Infopoints'"
-		ic-brief	= ""
-		ic-type		= "'places'"
-		ic-image	= "'/images/infopoint.jpg'"
-	></a>
-
+<!-- 	
 
 	<a
 		ng-repeat	= "target_group in icConfigData.targetGroups"
@@ -40,17 +18,8 @@
 		ic-brief	= "'INTERFACE.TARGET_GROUP' |translate"
 		ic-type		= "::Mock.random(['events', 'services', 'places', 'information'], $index+1)"
 	></a>
-
-	<!-- <a 
-		href 		= "#{{::icSite.getNewPath({item: index})}}" 
-		ic-tile
-		ic-title	= "::Mock.random(['Kurs', 'Angebot', 'Projekt', 'Termine'], index+5)"
-		ic-brief	= "::Mock.random(['von Beispielinitiative', 'für Beispieltext', 'mit Blindtext', 'im Beispielamt'], index+3)"
-		ic-image	= "::Mock.image(index+2)"
-		ic-type		= "::Mock.random(['events', 'services', 'places', 'information'], index+1)"
-
-		ng-repeat 	= "index in ::Mock.arr(16)"
-	></a> -->
+ -->
+	
 
 </div>
 

@@ -21,23 +21,6 @@
 	Home
 </a>
 
-<a 
-	ng-repeat 	= "type in ::icConfigData.types"
-	ng-href		= "/#t/{{type}}"
-	ng-click 	= "icOverlays.toggle()" 
-	ic-touch-me
->
-	<span 
-		class 		= "icon"
-		style		= "background-image: url({{::type | icIcon : 'type' : 'color'}});"
-	>		
-	</span>
-	<div>
-		{{type | uppercase | prepend : "TYPES." | translate}}
-	</div>
-</a>
-
-
 <a
 	ng-click 	= "expand.topics = !expand.topics"
 	ng-class	= "{'icon-interface-arrow-down': expand.topics, 'icon-interface-arrow-right': !expand.topics}"
