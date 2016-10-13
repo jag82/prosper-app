@@ -194,3 +194,34 @@ ic-spinner .background:after {
 	}
 
 }
+
+
+
+
+
+/*prosper*/
+
+
+ic-spinner{
+	display:				none !important;
+}
+
+
+ic-text-logo * {
+	display:				none !important;
+}
+
+ic-text-logo {
+	display:				block;
+	background:				url('../images/no-bg_Prosper.png');
+	height:					4rem;
+	width:					18rem;
+	background-size:		contain;
+	background-position:	0 50%;
+	background-repeat:		no-repeat;
+}
+
+.logo {
+	background-image:		none !important;
+}
+
