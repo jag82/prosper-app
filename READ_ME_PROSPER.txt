@@ -18,4 +18,6 @@ icApiProvider.setBase('http://213.187.84.22:3000')
 
 5) Texte werden über die Api bezogen (api-url.../locale), dort kommen auch die Übersetzungen her.
 
+6) Farben und Icons stehen in styles/typography_and_colors.css
+
 
