@@ -221,7 +221,12 @@ ic-text-logo {
 	background-repeat:		no-repeat;
 }
 
+ic-loading-screen ic-text-logo {
+	margin:					auto;
+}
+
 .logo {
 	background-image:		none !important;
 }
+
 
