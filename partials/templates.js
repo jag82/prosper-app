@@ -390,7 +390,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "		ic-title 	= \"key | uppercase | prepend: 'INTERFACE.ITEM_' | translate\"\n" +
     "		ic-content	= \"item[key]\"\n" +
     "		ic-icon		= \"key | icIcon : 'item' : 'black'\"\n" +
-    "		ic-linked\n" +
+    "		ic-linked	= \"true\"\n" +
     "	>\n" +
     "	</ic-info-tag>\n" +
     "\n" +
