@@ -230,7 +230,7 @@
 	<!-- start misc -->
 
 	<ic-info-tag
-		ng-repeat-start	= "key in [website', 'email', 'twitter', 'linkedin', 'instagram', 'facebook']"
+		ng-repeat	= "key in [website', 'email', 'twitter', 'linkedin', 'instagram', 'facebook']"
 		ng-if		= "item[key] && !editMode"
 		ic-title 	= "key | uppercase | prepend: 'INTERFACE.ITEM_' | translate"
 		ic-content	= "item[key]"
@@ -240,7 +240,7 @@
 	</ic-info-tag>
 
 	<ic-info-tag
-		ng-repeat-start	= "key in ['name', 'phone', price', 'maxParticipants']"
+		ng-repeat	= "key in ['name', 'phone', price', 'maxParticipants']"
 		ng-if		= "item[key] && !editMode"
 		ic-title 	= "key | uppercase | prepend: 'INTERFACE.ITEM_' | translate"
 		ic-content	= "item[key]"
@@ -249,7 +249,7 @@
 	</ic-info-tag>
 
 	<ic-item-edit
-		ng-repeat-end
+		ng-repeat				= "key in [website', 'email', 'twitter', 'linkedin', 'instagram', 'facebook', 'name', 'phone', price', 'maxParticipants']"
 		ng-if 					= "editMode"
 		ic-type 				= "string"
 		ic-label				= "{{key | uppercase | prepend: 'INTERFACE.ITEM_' | translate}} "

@@ -385,7 +385,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	<!-- start misc -->\n" +
     "\n" +
     "	<ic-info-tag\n" +
-    "		ng-repeat-start	= \"key in [website', 'email', 'twitter', 'linkedin', 'instagram', 'facebook']\"\n" +
+    "		ng-repeat	= \"key in [website', 'email', 'twitter', 'linkedin', 'instagram', 'facebook']\"\n" +
     "		ng-if		= \"item[key] && !editMode\"\n" +
     "		ic-title 	= \"key | uppercase | prepend: 'INTERFACE.ITEM_' | translate\"\n" +
     "		ic-content	= \"item[key]\"\n" +
@@ -395,7 +395,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	</ic-info-tag>\n" +
     "\n" +
     "	<ic-info-tag\n" +
-    "		ng-repeat-start	= \"key in ['name', 'phone', price', 'maxParticipants']\"\n" +
+    "		ng-repeat	= \"key in ['name', 'phone', price', 'maxParticipants']\"\n" +
     "		ng-if		= \"item[key] && !editMode\"\n" +
     "		ic-title 	= \"key | uppercase | prepend: 'INTERFACE.ITEM_' | translate\"\n" +
     "		ic-content	= \"item[key]\"\n" +
@@ -404,7 +404,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	</ic-info-tag>\n" +
     "\n" +
     "	<ic-item-edit\n" +
-    "		ng-repeat-end\n" +
+    "		ng-repeat				= \"key in [website', 'email', 'twitter', 'linkedin', 'instagram', 'facebook', 'name', 'phone', price', 'maxParticipants']\"\n" +
     "		ng-if 					= \"editMode\"\n" +
     "		ic-type 				= \"string\"\n" +
     "		ic-label				= \"{{key | uppercase | prepend: 'INTERFACE.ITEM_' | translate}} \"\n" +
