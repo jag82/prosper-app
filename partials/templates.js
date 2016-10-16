@@ -544,8 +544,8 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "<div class = \"title\">					{{icTitle}}		</div>\n" +
     "\n" +
     "<div class = \"content highlight\">		\n" +
-    "	<a 		ng-if = \"icLinked\" ng-href = \"content\">{{icContent}}</a>\n" +
-    "	<span 	>{{icContent}}</span>\n" +
+    "	<a 		ng-if = \"icLinked\" ng-href = \"{{icContent}}\">{{icContent}}</a>\n" +
+    "	<span 	ng-if = \"!icLinked\">{{icContent}}</span>\n" +
     "	<div \n" +
     "		ng-repeat 	= \"line in icExtraLines\"\n" +
     "		ng-if		= \"line | trim\"\n" +

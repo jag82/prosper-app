@@ -2,8 +2,8 @@
 <div class = "title">					{{icTitle}}		</div>
 
 <div class = "content highlight">		
-	<a 		ng-if = "icLinked" ng-href = "content">{{icContent}}</a>
-	<span 	>{{icContent}}</span>
+	<a 		ng-if = "icLinked" ng-href = "{{icContent}}">{{icContent}}</a>
+	<span 	ng-if = "!icLinked">{{icContent}}</span>
 	<div 
 		ng-repeat 	= "line in icExtraLines"
 		ng-if		= "line | trim"

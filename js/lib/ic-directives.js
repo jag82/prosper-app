@@ -522,7 +522,8 @@ angular.module('icDirectives', [
 								icTitle:		"<",
 								icContent:		"<",
 								icExtraLines:	"<",
-								icIcon:			"<"
+								icIcon:			"<",
+								icLinked:		"<"
 							},
 
 			link: function(scope, element, attrs){
