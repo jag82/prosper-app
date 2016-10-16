@@ -781,7 +781,10 @@ angular.module('icServices', [
 												email:			'email',
 												price:			'price',
 												maxParticipants:'max_participants',
-												hours:			'hours'
+												hours:			'hours',
+												country:		'country',
+												linkedin:		'linkedin',
+												twitter:		'twitter'
 											},
 
 				rawHashes				=	{

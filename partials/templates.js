@@ -339,7 +339,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "		ng-if			= \"item.address && !editMode\"\n" +
     "		ic-title 		= \"'INTERFACE.ITEM_ADDRESS' | translate\"\n" +
     "		ic-content		= \"item.address\"\n" +
-    "		ic-extra-lines	= \"[(item.zip||'') + ' ' + (item.location||'')]\"\n" +
+    "		ic-extra-lines	= \"[(item.zip||'') + ' ' + (item.location||''), item.country]\"\n" +
     "		ic-icon			= \"'address'| icIcon : 'item' : 'black'\"\n" +
     "	>\n" +
     "	</ic-info-tag>\n" +
@@ -780,6 +780,8 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "></ic-search>\n" +
     "\n" +
     "\n" +
+    "\n" +
+    "\n" +
     "<a \n" +
     "	ng-href		= \"/#\"\n" +
     "	ic-toggle-overlay \n" +
@@ -787,6 +789,8 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     ">\n" +
     "	Home\n" +
     "</a>\n" +
+    "\n" +
+    "\n" +
     "\n" +
     "<a\n" +
     "	ng-click 	= \"expand.topics = !expand.topics\"\n" +
@@ -796,6 +800,8 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     ">\n" +
     "	{{\"INTERFACE.TOPICS\" | translate}}\n" +
     "</a>\n" +
+    "\n" +
+    "\n" +
     "\n" +
     "<div ng-show = \"expand.topics\">\n" +
     "	<a \n" +
@@ -812,20 +818,6 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "		{{topic | uppercase | prepend : \"TOPICS.\" | translate}}\n" +
     "	</a>\n" +
     "</div>\n" +
-    "\n" +
-    "<a ng-if = \"icUser.authToken\"></a>\n" +
-    "<a \n" +
-    "	ng-if 		= \"icUser.authToken\" \n" +
-    "	class 		= \"xjust\"\n" +
-    "	ng-click 	= \"logout()\" \n" +
-    "><span>{{icUser.name}}</span>  <span>{{'INTERFACE.LOGOUT' | translate}}</span></a>\n" +
-    "\n" +
-    "<a \n" +
-    "	ng-if 				= \"!icUser.authToken\"\n" +
-    "	ic-toggle-overlay 	= \"login\"\n" +
-    ">\n" +
-    "	{{'INTERFACE.LOGIN' | translate}}\n" +
-    "</a>\n" +
     "\n"
   );
 
@@ -1046,6 +1038,17 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	no-text-nodes \n" +
     "	class = \"tiles\"\n" +
     ">\n" +
+    "\n" +
+    "\n" +
+    "	<a\n" +
+    "		ng-href 	= \"#{{icSite.getNewPath({s: 'RefuComm'}, true)}}\"\n" +
+    "		ic-tile\n" +
+    "		ic-title	= \"target_group | prepend : 'TARGET_GROUPS.' | uppercase | translate\"\n" +
+    "		ic-brief	= \"'INTERFACE.TARGET_GROUP' |translate\"\n" +
+    "		ic-type		= \"'events'\"\n" +
+    "	></a>\n" +
+    "\n" +
+    "\n" +
     "\n" +
     "<!-- 	\n" +
     "\n" +

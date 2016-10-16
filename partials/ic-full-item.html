@@ -184,7 +184,7 @@
 		ng-if			= "item.address && !editMode"
 		ic-title 		= "'INTERFACE.ITEM_ADDRESS' | translate"
 		ic-content		= "item.address"
-		ic-extra-lines	= "[(item.zip||'') + ' ' + (item.location||'')]"
+		ic-extra-lines	= "[(item.zip||'') + ' ' + (item.location||''), item.country]"
 		ic-icon			= "'address'| icIcon : 'item' : 'black'"
 	>
 	</ic-info-tag>

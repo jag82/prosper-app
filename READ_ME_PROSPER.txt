@@ -23,3 +23,5 @@ icApiProvider.setBase('http://213.187.84.22:3000')
 7) Die Homepage mit den Kacheln liegt in /pages/main.html. Beispielkacheln für Zielgruppen gibt es dort, allerdings: auskommentiert.
 
 
+todo linkedin instagram
+country
