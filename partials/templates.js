@@ -385,7 +385,17 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	<!-- start misc -->\n" +
     "\n" +
     "	<ic-info-tag\n" +
-    "		ng-repeat-start	= \"key in ['name', 'website', 'email', 'phone', 'facebook', 'price', 'maxParticipants']\"\n" +
+    "		ng-repeat-start	= \"key in [website', 'email', 'twitter', 'linkedin', 'instagram', 'facebook']\"\n" +
+    "		ng-if		= \"item[key] && !editMode\"\n" +
+    "		ic-title 	= \"key | uppercase | prepend: 'INTERFACE.ITEM_' | translate\"\n" +
+    "		ic-content	= \"item[key]\"\n" +
+    "		ic-icon		= \"key | icIcon : 'item' : 'black'\"\n" +
+    "		ic-linked\n" +
+    "	>\n" +
+    "	</ic-info-tag>\n" +
+    "\n" +
+    "	<ic-info-tag\n" +
+    "		ng-repeat-start	= \"key in ['name', 'phone', price', 'maxParticipants']\"\n" +
     "		ng-if		= \"item[key] && !editMode\"\n" +
     "		ic-title 	= \"key | uppercase | prepend: 'INTERFACE.ITEM_' | translate\"\n" +
     "		ic-content	= \"item[key]\"\n" +
@@ -532,8 +542,10 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
   $templateCache.put('partials/ic-info-tag.html',
     "<div class = \"icon\"><img ng-src = \"{{icIcon}}\"/></div>\n" +
     "<div class = \"title\">					{{icTitle}}		</div>\n" +
+    "\n" +
     "<div class = \"content highlight\">		\n" +
-    "	{{icContent}}	\n" +
+    "	<a 		ng-if = \"icLinked\" ng-href = \"content\">{{icContent}}</a>\n" +
+    "	<span 	>{{icContent}}</span>\n" +
     "	<div \n" +
     "		ng-repeat 	= \"line in icExtraLines\"\n" +
     "		ng-if		= \"line | trim\"\n" +

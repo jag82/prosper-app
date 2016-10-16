@@ -784,7 +784,8 @@ angular.module('icServices', [
 												hours:			'hours',
 												country:		'country',
 												linkedin:		'linkedin',
-												twitter:		'twitter'
+												twitter:		'twitter',
+												instagram:		'instagram'
 											},
 
 				rawHashes				=	{
