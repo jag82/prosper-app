@@ -10,10 +10,11 @@
 
 
 	<a
-		ng-href 	= "#{{icSite.getNewPath({s: 'RefuComm'}, true)}}"
+		ng-repeat	= "term in ['RefuComm', 'Rafiqi','Street Kitchen','refugeeswork', 'art without borders', 'Mapfugees', 'Greece Volunteer Info', 'InfoCompass', 'NaTakallam', 'Lifting Hands International']"   
+		ng-href 	= "#{{icSite.getNewPath({s: term}, true)}}"
 		ic-tile
 		ic-title	= "'RefuComm'"
-		ic-type		= "'events'"
+		ic-type		= "'places'"
 	></a>
 
 
