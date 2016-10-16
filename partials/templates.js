@@ -1043,8 +1043,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	<a\n" +
     "		ng-href 	= \"#{{icSite.getNewPath({s: 'RefuComm'}, true)}}\"\n" +
     "		ic-tile\n" +
-    "		ic-title	= \"target_group | prepend : 'TARGET_GROUPS.' | uppercase | translate\"\n" +
-    "		ic-brief	= \"'INTERFACE.TARGET_GROUP' |translate\"\n" +
+    "		ic-title	= \"'RefuComm'\"\n" +
     "		ic-type		= \"'events'\"\n" +
     "	></a>\n" +
     "\n" +
