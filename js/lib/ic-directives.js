@@ -591,7 +591,7 @@ angular.module('icDirectives', [
 				switch(str){
 					case 'information': return "blue"; 		break;
 					case 'events':		return "purple";	break;
-					case 'places':		return "orange";	break;
+					case 'places':		return "teal";	break;
 					case 'services':	return "yellow";	break;
 					default:			return "white";		break
 				}

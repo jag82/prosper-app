@@ -1044,7 +1044,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "		ng-repeat	= \"term in ['RefuComm', 'Rafiqi','Street Kitchen','refugeeswork', 'art without borders', 'Mapfugees', 'Greece Volunteer Info', 'InfoCompass', 'NaTakallam', 'Lifting Hands International']\"   \n" +
     "		ng-href 	= \"#{{icSite.getNewPath({s: term}, true)}}\"\n" +
     "		ic-tile\n" +
-    "		ic-title	= \"'RefuComm'\"\n" +
+    "		ic-title	= \"term\"\n" +
     "		ic-type		= \"'places'\"\n" +
     "	></a>\n" +
     "\n" +
