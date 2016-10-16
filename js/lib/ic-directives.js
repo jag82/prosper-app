@@ -627,7 +627,7 @@ angular.module('icDirectives', [
 				case 'time':		return "/images/icon_"+p+"_time_"+c+".svg";			break;				
 				case 'website':		return "/images/icon_"+p+"_link_"+c+".svg";			break;				
 				// default:			return "/images/icon_nav_close.svg";				break;
-				default:			return "/images/icon_topic_information_white.svg";	console.warn('icIcon: missing icon displayed as info!'); break;
+				default:			return "/images/icon_interface_close.svg";	console.warn('icIcon: missing icon displayed as info!'); break;
 			}
 		}
 })

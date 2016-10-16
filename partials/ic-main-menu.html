@@ -13,6 +13,8 @@
 ></ic-search>
 
 
+
+
 <a 
 	ng-href		= "/#"
 	ic-toggle-overlay 
@@ -20,6 +22,8 @@
 >
 	Home
 </a>
+
+
 
 <a
 	ng-click 	= "expand.topics = !expand.topics"
@@ -29,6 +33,8 @@
 >
 	{{"INTERFACE.TOPICS" | translate}}
 </a>
+
+
 
 <div ng-show = "expand.topics">
 	<a 
@@ -45,18 +51,4 @@
 		{{topic | uppercase | prepend : "TOPICS." | translate}}
 	</a>
 </div>
-
-<a ng-if = "icUser.authToken"></a>
-<a 
-	ng-if 		= "icUser.authToken" 
-	class 		= "xjust"
-	ng-click 	= "logout()" 
-><span>{{icUser.name}}</span>  <span>{{'INTERFACE.LOGOUT' | translate}}</span></a>
-
-<a 
-	ng-if 				= "!icUser.authToken"
-	ic-toggle-overlay 	= "login"
->
-	{{'INTERFACE.LOGIN' | translate}}
-</a>
 
