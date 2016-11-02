@@ -9,13 +9,7 @@ body {
 	height:				100%;
 	overflow:			hidden;
 	-webkit-overflow-scrolling: touch;
-}
-
-/* Mock*/
-html.initial-rem {
-	background-image:		url(../mock/example_map.jpeg);
-	background-size:		cover;
-	background-repeat:		no-repeat;
+	background-color:	rgb(215, 210, 203);
 }
 
 
