@@ -273,24 +273,6 @@
 	</ic-info-tag>
 
 
-	<hr/>
-
-
-	<qrcode 
-		ng-if					=	"!editMode"
-		version					=	"3" 
-		error-correction-level	=	"M" 
-		size					=	"200" 
-		data					=	"{{item.id | icItemLink}}"
-		ng-if					=	"item"
-		ic-toggle-overlay		=	"qrcode"
-	>
-	</qrcode>
-
-
-	<hr/>
-
-
 	<footer>
 		<div class = "tools">
 			<a 

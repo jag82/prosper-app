@@ -428,24 +428,6 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	</ic-info-tag>\n" +
     "\n" +
     "\n" +
-    "	<hr/>\n" +
-    "\n" +
-    "\n" +
-    "	<qrcode \n" +
-    "		ng-if					=	\"!editMode\"\n" +
-    "		version					=	\"3\" \n" +
-    "		error-correction-level	=	\"M\" \n" +
-    "		size					=	\"200\" \n" +
-    "		data					=	\"{{item.id | icItemLink}}\"\n" +
-    "		ng-if					=	\"item\"\n" +
-    "		ic-toggle-overlay		=	\"qrcode\"\n" +
-    "	>\n" +
-    "	</qrcode>\n" +
-    "\n" +
-    "\n" +
-    "	<hr/>\n" +
-    "\n" +
-    "\n" +
     "	<footer>\n" +
     "		<div class = \"tools\">\n" +
     "			<a \n" +
