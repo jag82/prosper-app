@@ -786,14 +786,6 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	</a>\n" +
     "</h2>\n" +
     "\n" +
-    "<ic-search				\n" +
-    "	class 				= \"white right\"\n" +
-    "	ic-on-update		= \"icSite.clearItem(); icFilterConfig.clearFilter();icOverlays.toggle('mainMenu');\"\n" +
-    "></ic-search>\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "\n" +
     "<a \n" +
     "	ng-href		= \"/#\"\n" +
     "	ic-toggle-overlay \n" +
@@ -838,7 +830,6 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "\n" +
     "<ic-language-menu 		ng-class = \"{'ic-hide': !icOverlays.show.languageMenu}\" 	class = \"white right\">	</ic-language-menu>	\n" +
     "<ic-main-menu			ng-class = \"{'ic-hide': !icOverlays.show.mainMenu}\"			class = \"white left\">	</ic-main-menu>\n" +
-    "\n" +
     "\n" +
     "<ic-login \n" +
     "	ng-if 				= \"icOverlays.show.login\" \n" +
