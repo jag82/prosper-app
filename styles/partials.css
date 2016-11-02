@@ -65,8 +65,10 @@ ic-section-list {
 
 
 ic-search {
-	display:				inline-block;
+	display:				block;
 	position:				relative;
+	width:					18rem;
+	margin:					auto;
 }
 
 ic-search .search-term {
@@ -91,6 +93,8 @@ ic-search .search-term button {
 	right:					0;
 	bottom:					0;
 	width:					2rem;
+	height:					auto !important;
+	min-height:				0 !important;
 	background-position:	50% 50%;
 	background-repeat:		no-repeat;
 	background-size:		contain;
@@ -192,13 +196,15 @@ ic-search .auto-suggest a {
 
 
 .logo {
-	width:					16rem;
-	padding:				2.8rem 2.8rem;
+	width:					18rem;
+	padding:				2rem 0;
 	font-size:				1.2rem;
 	background-image:		url(/images/logo.svg);
 	background-position:	0 0;
 	background-size:		3.5rem auto;
 	background-repeat:		no-repeat;
+	text-align:				center;
+	margin:					auto;
 }
 
 .logo h1 {
@@ -214,6 +220,15 @@ ic-search .auto-suggest a {
 }
 
 
+
+/* disclaimer */
+
+.disclaimer {
+	display:				block;
+	width:					18rem;
+	margin:					2rem auto;
+	color:					#888;
+}
 
 
 

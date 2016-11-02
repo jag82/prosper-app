@@ -839,12 +839,6 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "<ic-language-menu 		ng-class = \"{'ic-hide': !icOverlays.show.languageMenu}\" 	class = \"white right\">	</ic-language-menu>	\n" +
     "<ic-main-menu			ng-class = \"{'ic-hide': !icOverlays.show.mainMenu}\"			class = \"white left\">	</ic-main-menu>\n" +
     "\n" +
-    "<ic-search				\n" +
-    "	ng-class 			= \"{'ic-hide':!icOverlays.show.search}\"\n" +
-    "	class 				= \"white right\"\n" +
-    "	ic-on-update 		= \"icOverlays.toggle('search')\" \n" +
-    "></ic-search>\n" +
-    "\n" +
     "\n" +
     "<ic-login \n" +
     "	ng-if 				= \"icOverlays.show.login\" \n" +
@@ -1021,6 +1015,12 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
   $templateCache.put('partials/section-list.html',
     "<ic-search-term></ic-search-term>\n" +
     "\n" +
+    "<ic-search				\n" +
+    "	ng-class 			= \"{'ic-hide':!icOverlays.show.search}\"\n" +
+    "	class 				= \"white right\"\n" +
+    "></ic-search>\n" +
+    "\n" +
+    "\n" +
     "<ic-filter-interface\n" +
     "	ng-if = \"icShowFilter\"\n" +
     ">\n" +
@@ -1046,37 +1046,16 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "	<h2>{{'INTERFACE.CLAIM' | translate}}</h2>\n" +
     "</div>\n" +
     "\n" +
-    "<div\n" +
-    "	no-text-nodes \n" +
-    "	class = \"tiles\"\n" +
-    ">\n" +
     "\n" +
+    "<ic-search				\n" +
+    "	ng-class 			= \"{'ic-hide':!icOverlays.show.search}\"\n" +
+    "	class 				= \"white right\"\n" +
+    "	ic-on-update 		= \"icOverlays.toggle('search')\" \n" +
+    "></ic-search>\n" +
     "\n" +
-    "	<a\n" +
-    "		ng-repeat	= \"term in ['RefuComm', 'Rafiqi','Street Kitchen','refugeeswork', 'art without borders', 'Mapfugees', 'Greece Volunteer Info', 'InfoCompass', 'NaTakallam', 'Lifting Hands International']\"   \n" +
-    "		ng-href 	= \"#{{icSite.getNewPath({s: term}, true)}}\"\n" +
-    "		ic-tile\n" +
-    "		ic-title	= \"term\"\n" +
-    "		ic-type		= \"'places'\"\n" +
-    "	></a>\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "<!-- 	\n" +
-    "\n" +
-    "	<a\n" +
-    "		ng-repeat	= \"target_group in icConfigData.targetGroups\"\n" +
-    "		ng-href 	= \"#{{icSite.getNewPath({tg: target_group}, true)}}\"\n" +
-    "		ic-tile\n" +
-    "		ic-title	= \"target_group | prepend : 'TARGET_GROUPS.' | uppercase | translate\"\n" +
-    "		ic-brief	= \"'INTERFACE.TARGET_GROUP' |translate\"\n" +
-    "		ic-type		= \"::Mock.random(['events', 'services', 'places', 'information'], $index+1)\"\n" +
-    "	></a>\n" +
-    " -->\n" +
-    "	\n" +
-    "\n" +
-    "</div>\n" +
-    "\n"
+    "<div class =\"disclaimer\">\n" +
+    "	{{'INTERFACE.DISCLAIMER' | translate }}\n" +
+    "</div>"
   );
 
 }]);
