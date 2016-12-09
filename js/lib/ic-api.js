@@ -19,7 +19,7 @@ angular.module('icApi', [])
 	function(icApi){
 		var icUser = this
 
-		icUser.name 		= undefined 
+		icUser.name 		= undefined
 		icUser.role			= 'guest'
 		icUser.authToken	= undefined
 
@@ -66,7 +66,7 @@ angular.module('icApi', [])
 
 		icUser.can = function(task){
 			console.log(task, rights[icUser.role] &&  (rights[icUser.role].indexOf(task) != -1))
-			return 	rights[icUser.role] &&  (rights[icUser.role].indexOf(task) != -1)						
+			return 	rights[icUser.role] &&  (rights[icUser.role].indexOf(task) != -1)
 		}
 
 
@@ -119,7 +119,7 @@ angular.module('icApi', [])
 						.then(
 							function(result){
 								return result.data
-							}, 
+							},
 							function(result){
 								if(result.status == 305){
 									$rootScope.$broadcast('loginRequired', 'message ztest')

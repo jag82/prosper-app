@@ -21,12 +21,12 @@ angular.module('InfoCompassModule',[
 
 		icApiProvider.setBase('http://45.55.251.73:3000')
 
-		smlLayoutProvider.setModes([			
+		smlLayoutProvider.setModes([
 			{
-				name:		'XS',	
+				name:		'XS',
 				width: 		23,
 				stretch:	true
-			},	
+			},
 			{
 				name:		'S',
 				width:		48,
@@ -51,9 +51,7 @@ angular.module('InfoCompassModule',[
 	}
 ])
 
-
 .controller('InfoCompassCtrl',[
-	
 	'$scope',
 	'icBootstrap',
 	'icSite',
@@ -63,15 +61,13 @@ angular.module('InfoCompassModule',[
 	'icLanguageConfig',
 	'icSearchResults',
 
-
 	function($scope, icBootstrap, icSite, icFilterConfig, smlLayout, icConfigData, icLanguageConfig, icSearchResults){
 		$scope.icSite 			= icSite
 		$scope.smlLayout		= smlLayout 		//Muss das wirklich?
-		$scope.icConfigData		= icConfigData 
+		$scope.icConfigData		= icConfigData
 		$scope.icSearchResults	= icSearchResults
 		$scope.icLanguageConfig = icLanguageConfig
 	}
-
 ])
 
 
