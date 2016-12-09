@@ -1015,7 +1015,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('pages/main.html',
     "<div class = \"logo\">\n" +
-    "        <h1><a href=\"http:prosper.community\"><ic-text-logo></ic-text-logo></a></h1>\n" +
+    "        <h1><a href=\"http://prosper.community\"><ic-text-logo></ic-text-logo></a></h1>\n" +
     "	<h2>{{'INTERFACE.CLAIM' | translate}}</h2>\n" +
     "</div>\n" +
     "\n" +
