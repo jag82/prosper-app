@@ -1015,20 +1015,20 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
 
   $templateCache.put('pages/main.html',
     "<div class = \"logo\">\n" +
-    "	<h1><ic-text-logo></ic-text-logo></h1>\n" +
+    "        <h1><a href=\"http:prosper.community\"><ic-text-logo></ic-text-logo></a></h1>\n" +
     "	<h2>{{'INTERFACE.CLAIM' | translate}}</h2>\n" +
     "</div>\n" +
     "\n" +
     "\n" +
-    "<ic-search				\n" +
-    "	ng-class 			= \"{'ic-hide':!icOverlays.show.search}\"\n" +
-    "	class 				= \"white right\"\n" +
-    "	ic-on-update 		= \"icOverlays.toggle('search')\" \n" +
+    "<ic-search\n" +
+    "	ng-class 	= \"{'ic-hide':!icOverlays.show.search}\"\n" +
+    "	class 		= \"white right\"\n" +
+    "	ic-on-update 	= \"icOverlays.toggle('search')\"\n" +
     "></ic-search>\n" +
     "\n" +
     "<div class =\"disclaimer\">\n" +
     "	{{'INTERFACE.DISCLAIMER' | translate }}\n" +
-    "</div>"
+    "</div>\n"
   );
 
 }]);
