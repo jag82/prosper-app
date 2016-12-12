@@ -42,6 +42,64 @@ body > #content {
 	overflow:				hidden;
 }
 
+body > #content:after{
+	content:				'';
+	position:				absolute;
+	display:				block;
+	height:					100%;
+	right:					0;
+	top:					0;
+	left:					0;
+	background:				linear-gradient(45deg, rgba(23, 175, 149, 0.5), rgba(247, 238, 128, 0.5)), url('/images/sunrays-morning-grass.jpeg');
+	background-size:		cover;
+	background-position:	50% 50%;
+	background-repeat:		no-repeat;
+	z-index:				0;
+}
+
+.XS				body > #content:after,
+.S				body > #content:after{
+	display:				none;
+}
+
+.M.show-list	body > #content:after{
+	left:					42rem;
+}
+
+.M.show-item	body > #content:after{
+	left:					40rem;
+}
+
+.M.show-list.show-item	body > #content:after{
+	left:					64rem;
+}
+
+
+.L.show-list	body > #content:after{
+	left:					42rem;
+}
+
+.L.show-item	body > #content:after{
+	left:					40rem;
+}
+
+.L.show-list.show-item	body > #content:after{
+	left:					80rem;
+}
+
+
+.XL.show-list	body > #content:after{
+	left:					42rem;
+}
+
+.XL.show-item	body > #content:after{
+	left:					40rem;
+}
+
+.XL.show-list.show-item	body > #content:after{
+	left:					80rem;
+}
+
 
 
 
@@ -93,7 +151,7 @@ body > #content {
 }
 
 .scrollbar-takes-space #content > section:hover {
-	overflow-y:				auto;
+	overflow-y:				scroll;
 
 	-webkit-overflow-scrolling: touch;
 }

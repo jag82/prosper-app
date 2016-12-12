@@ -116,13 +116,17 @@ ic-spinner .foreground{
 	position:				absolute;
 	top:					0;
 	left:					0;
-	width:					1em;
-	height:					1em;
+	width:					0.5em;
+	height:					0.5em;
 
-	background-image:		url('../images/logo.svg');
-	background-size:		1em;
-	background-position:	50% 50%;
-	background-repeat:		no-repeat;
+	animation:				spin 1000ms infinite linear;
+	-webkit-animation:		spin 1000ms infinite linear;
+
+	border-width:			0.25rem;
+	border-color:			transparent transparent transparent #015f64;
+	border-style:			solid;
+	border-radius:			100%;
+
 	z-index:				5;
 }
 
@@ -134,38 +138,10 @@ ic-spinner .background{
 	left:					0;
 	width:					1em;
 	height:					1em;
-	animation:				spin 2000ms infinite linear;
-	-webkit-animation:		spin 2000ms infinite linear;
-	z-index:				0;
-}
-
-
-
-ic-spinner .background:before,
-ic-spinner .background:after {
-	content:				'';
-	display:				block;
-
-	position:				absolute;
-	top:					0;
-	left:					0;
-	width:					1em;
-	height:					1em;
-
-	background-image:		url('../images/logo.svg');
-	background-size:		0.725em;
-	background-position:	50% 50%;
-	background-repeat:		no-repeat;
-
 	z-index:				0;
 
-	filter: 				grayscale(100%);
-	-webkit-filter: 		grayscale(100%);
-	-moz-filter: 			grayscale(100%);
-	-o-filter: 				grayscale(100%);
-	-ms-filter: 			grayscale(100%);
-
 }
+
 
 ic-spinner .background:after {
 	transform:				rotate(135deg);
@@ -200,11 +176,6 @@ ic-spinner .background:after {
 
 
 /*prosper*/
-
-
-ic-spinner{
-	display:				none !important;
-}
 
 
 ic-text-logo * {

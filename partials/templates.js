@@ -721,8 +721,7 @@ angular.module('InfoCompass').run(['$templateCache', function($templateCache) {
     "		<ic-section-item></ic-section-item>\n" +
     "	</section><!--\n" +
     "	 </ic-horizontal-swipe-list>\n" +
-    "	 -->\n" +
-    "\n"
+    "	 -->"
   );
 
 
